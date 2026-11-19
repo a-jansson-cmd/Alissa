@@ -1,0 +1,442 @@
+/* =================================
+   GRUNDINSTÄLLNINGAR
+================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background-color: #fff8f5;
+    color: #493238;
+    
+
+body > a {
+    color: #853e52;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+body > a:hover {
+    color: #b76e82;
+    text-decoration: underline;
+}
+}
+
+
+/* =================================
+   NAVIGERINGSMENY
+================================= */
+
+nav {
+    background-color: #853e52;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f5cbd3;
+}
+
+
+/* =================================
+   STARTSIDAN - VÄLKOMSTSEKTIONEN
+================================= */
+
+.intro {
+    text-align: center;
+    padding: 90px 20px;
+    background-color: #f4dce0;
+}
+
+.intro h1 {
+    font-size: 42px;
+    color: #853e52;
+}
+
+.intro p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* =================================
+   STARTSIDAN - FILMERNA
+================================= */
+
+#filmer {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#filmer h2 {
+    font-size: 32px;
+    color: #853e52;
+    margin-bottom: 40px;
+}
+
+.filmer {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+
+/* =================================
+   FILMKORTEN
+================================= */
+
+.film {
+    background-color: white;
+    width: 250px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(80, 40, 50, 0.12);
+    transition: transform 0.3s;
+}
+
+/* Lyfter filmkorten när muspekaren är över */
+
+.film:hover {
+    transform: translateY(-5px);
+}
+
+.film img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.film h3 {
+    color: #853e52;
+    font-size: 20px;
+}
+
+.film a {
+    color: #853e52;
+    text-decoration: none;
+}
+
+.film a:hover {
+    text-decoration: underline;
+}
+
+.film p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+/* =================================
+   FILMSIDORNA
+================================= */
+
+.film-sida {
+    padding: 40px 20px;
+}
+
+/* Huvudrubriker */
+
+.film-sida h1 {
+    text-align: center;
+    color: #853e52;
+    font-size: 42px;
+    margin-bottom: 35px;
+}
+
+/* Filmaffischer */
+
+.film-sida img {
+    display: block;
+    max-width: 90%;
+    height: 350px;
+    width: auto;
+    margin: 0 auto 40px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(80, 40, 50, 0.2);
+    object-fit: contain;
+}
+
+/* Underrubriker */
+
+.film-sida h2 {
+    color: #853e52;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Filmbeskrivningar */
+
+.film-sida p {
+    background-color: white;
+    max-width: 850px;
+    margin: 0 auto 35px auto;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(80, 40, 50, 0.10);
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* =================================
+   FAKTASIDAN
+================================= */
+
+#fakta {
+    padding: 30px 20px;
+}
+
+#fakta h1 {
+    text-align: center;
+    color: #853e52;
+    font-size: 42px;
+}
+
+#fakta h2 {
+    color: #853e52;
+    text-align: center;
+    font-size: 28px;
+}
+
+#fakta h3 {
+    color: #a45b70;
+    max-width: 850px;
+    margin: 25px auto 15px auto;
+}
+
+#fakta img {
+    display: block;
+    max-width: 90%;
+    height: 300px;
+    width: auto;
+    object-fit: contain;
+    margin: 25px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(73, 50, 56, 0.15);
+}
+
+#fakta p {
+    background-color: white;
+    max-width: 850px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(73, 50, 56, 0.10);
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+
+/* =================================
+   QUIZSIDAN
+================================= */
+
+#quiz {
+    max-width: 850px;
+    width: 90%;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(80, 40, 50, 0.10);
+}
+
+#quiz h2 {
+    color: #853e52;
+    text-align: center;
+}
+
+#quiz h3 {
+    color: #853e52;
+    margin-top: 25px;
+}
+
+#quiz p {
+    line-height: 1.8;
+}
+
+
+/* =================================
+   KNAPPAR
+================================= */
+
+button {
+    background-color: #853e52;
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #b76e82;
+    transform: scale(1.05);
+}
+
+
+/* =================================
+   LÄNKAR
+================================= */
+
+body > a {
+    display: block;
+    text-align: center;
+    color: #853e52;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 30px auto;
+}
+
+body > a:hover {
+    color: #b76b80;
+    text-decoration: underline;
+}
+
+
+/* =================================
+   MOBILANPASSNING
+================================= */
+
+@media screen and (max-width: 600px) {
+
+    /* Menyn */
+
+    nav {
+        padding: 15px 10px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    /* Rubriker */
+
+    h1,
+    .intro h1,
+    .film-sida h1,
+    #fakta h1 {
+        font-size: 29px;
+    }
+
+    h2,
+    .film-sida h2,
+    #fakta h2 {
+        font-size: 23px;
+    }
+
+    h3 {
+        font-size: 19px;
+    }
+
+    /* Startsidan */
+
+    .intro {
+        padding: 50px 15px;
+    }
+
+    .intro p {
+        font-size: 16px;
+    }
+
+    #filmer {
+        padding: 30px 10px;
+    }
+
+    .filmer {
+        gap: 20px;
+    }
+
+    .film {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    /* Filmsidorna */
+
+    .film-sida {
+        padding: 20px 10px;
+    }
+
+    .film-sida img {
+        max-width: 90%;
+        height: auto;
+    }
+
+    .film-sida p {
+        padding: 17px;
+        font-size: 15px;
+    }
+
+    /* Faktasidan */
+
+    #fakta {
+        padding: 20px 10px;
+    }
+
+    #fakta img {
+        max-width: 90%;
+        height: auto;
+    }
+
+    #fakta p {
+        width: 95%;
+        padding: 17px;
+        font-size: 15px;
+    }
+
+    #fakta h3 {
+        width: 95%;
+    }
+
+    /* Quizet */
+
+    #quiz {
+        width: 95%;
+        padding: 18px;
+    }
+
+    #quiz h3 {
+        font-size: 17px;
+    }
+
+    button {
+        width: 100%;
+        padding: 14px;
+    }
+
+}
